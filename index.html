@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Recursion</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card text-center">
+        <div class="card-header text-light bg-warning">Kaprekar's Constant</div>
+        <div class="card-body">
+          <form>
+            <h5 class="card-title">Enter Number</h5>
+            <div class="input">
+              <div class="mb-3">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="data"
+                  placeholder="Enter number:- "
+                  name="data"
+                />
+              </div>
+            </div>
+            <a onclick=" myFunction()" class="btn btn-primary">Go Submit</a>
+
+            <a
+              onclick="document.getElementById('data').value = ''"
+              type="reset"
+              class="btn btn-secondary"
+              >Go reset</a
+            >
+          </form>
+        </div>
+        <div class="card-footer bg-danger">
+          -: Output :-
+
+          <div class="container-fluid" id="opdata"></div>
+        </div>
+      </div>
+    </div>
+    <script src="mydata.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
